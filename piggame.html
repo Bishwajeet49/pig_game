@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="GAmestyle.css" />
+        <!--google font cdn link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,600&display=swap"
+          rel="stylesheet"
+        />
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="game_area player_side_0 active_side">
+
+        <h2 id="p1Name">Player 1</h2>
+
+        <h1 id="p1_global_score">0</h1>
+
+        <div class="current_score_wraper">
+          <div class="label">Current</div>
+          <div id="p1_current_score">0</div>
+        </div>
+
+      </div>
+
+      <div class="game_area player_side_1">
+        <h2 id="p2Name">Player 2</h2>
+
+        <h1 id="p2_global_score">0</h1>
+
+        <div class="current_score_wraper">
+          <div class="label">Current</div>
+          <div id="p2_current_score">0</div>
+        </div>
+      </div>
+
+      <div class="control_container">
+       <button id="newGameBtn">New Game</button>
+       <div class="imgWraper">
+        <img src="image/dice1.png" id="dice">
+       </div>
+       <div class="control_btn_wraper">
+         <button id="roll_dice">Roll Dice</button>
+         <button id="hold">HOLD</button>
+       </div>
+      </div>
+
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+ font-family: "Poppins";
+}
+.container {
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+.player_side_0 {
+  width: 50%;
+}
+.player_side_1{
+  width: 50%;
+}
+.active_side{
+  background-color: rgb(55, 226, 97);
+}
+.game_area,.control_container{
+  padding: 20vh 0px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-between;
+
+}
+.control_container{
+padding:10vh 0px ;
+}
+.current_score_wraper{
+  color:#fff;
+  background-color: rgb(53, 52, 52);
+  padding: 1rem 1.3rem;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+    box-shadow: 1px 1px 20px 10px rgba(14, 14, 14, 0.685) inset;
+}
+.current_score_wraper .label{
+  margin-bottom: 5px;
+}
+#roll_dice{
+  margin-bottom: 15px;
+}
+.control_container{
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  top:0;
+  bottom:0;
+  width:9rem;
+}
+.imgWraper{
+  width:5rem;
+  height:5rem
+}
+.imgWraper img{
+  width: 100%;
+  height: 100%;
+  box-shadow: 1px 1px 20px 10px rgba(14, 14, 14, 0.685) ;
+}
+button{
+  cursor: pointer;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border:none;
+  background-color:rgb(252, 166, 6);
+  color:#fff;
+  text-shadow: 1px 1px 1px rgb(14, 14, 14);
+  box-shadow: 1px 1px 20px 2px rgba(14, 14, 14, 0.685) ;
+}
+button:hover{
+  background-color:rgb(83, 83, 253) ;
+}
+.control_btn_wraper{
+display: grid;
+place-items: center;
+}
